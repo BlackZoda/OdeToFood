@@ -1,0 +1,51 @@
+@page
+@model OdeToFood.Pages.Resturants.ListModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>Resturants</h1>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-dark">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Cousine</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    @foreach (var resturant in Model.ResturantList)
+    {
+        <tr>
+            <td>@resturant.Name</td>
+            <td>@resturant.Location</td>
+            <td>@resturant.Cousine</td>
+            <td>
+                <a class="btn btn-info btn-sm" asp-page="./Detail" asp-route-resturantID="@resturant.Id">
+                    <i class="fa fa-search-plus"></i>
+                </a>
+                <a class="btn btn-info btn-sm" asp-page="./Edit" asp-route-resturantID="@resturant.Id">
+                    <i class="fa fa-pencil"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-page="./Edit" class="btn btn-primary">Add New</a>
+
+<div>@Model.Message</div>

@@ -1,0 +1,12 @@
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/bin/Debug/net5.0/OdeToFood.Core.deps.json
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/bin/Debug/net5.0/OdeToFood.Core.dll
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/bin/Debug/net5.0/ref/OdeToFood.Core.dll
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/bin/Debug/net5.0/OdeToFood.Core.pdb
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/OdeToFood.Core.csprojAssemblyReference.cache
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/OdeToFood.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/OdeToFood.Core.AssemblyInfoInputs.cache
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/OdeToFood.Core.AssemblyInfo.cs
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/OdeToFood.Core.csproj.CoreCompileInputs.cache
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/OdeToFood.Core.dll
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/ref/OdeToFood.Core.dll
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood.Core/obj/Debug/net5.0/OdeToFood.Core.pdb
