@@ -15654,6 +15654,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Resturants/Delete.cshtml",
+      "TargetPath": "Pages\\Resturants\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
