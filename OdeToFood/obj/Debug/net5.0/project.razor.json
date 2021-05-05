@@ -13566,6 +13566,23 @@
         }
       },
       {
+        "HashCode": -866231452,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__ResturantCountViewComponentTagHelper",
+        "AssemblyName": "OdeToFood",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:resturant-count"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__ResturantCountViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "ResturantCount"
+        }
+      },
+      {
         "HashCode": -482054960,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -15626,6 +15643,11 @@
     {
       "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Resturants/NotFound.cshtml",
       "TargetPath": "Pages\\Resturants\\NotFound.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Shared/Components/ResturantCount/Default.cshtml",
+      "TargetPath": "Pages\\Shared\\Components\\ResturantCount\\Default.cshtml",
       "FileKind": "mvc"
     },
     {

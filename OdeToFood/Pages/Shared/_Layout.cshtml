@@ -38,12 +38,13 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            @RenderSection("footer", required: false)
+            <vc:resturant-count></vc:resturant-count>
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            @RenderSection("footer", required: false)
             &copy; 2021 - OdeToFood - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>

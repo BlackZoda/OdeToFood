@@ -27,7 +27,7 @@ using OdeToFood.Core;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c171d7af057b8e22482375018694fc1c5e53d82d", @"/Pages/Resturants/_Summary.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4131f99e56e7ed69e62210f35a81d8b4678309ec", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3b2f3b51b3673bb472003b5131e3274d92bac785", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Resturants__Summary : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Resturant>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-info btn-sm"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
