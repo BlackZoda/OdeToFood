@@ -1,7 +1,7 @@
 @page
 @model OdeToFood.Pages.Resturants.ListModel
 @{
-    ViewData["Title"] = "List";
+    ViewData["Title"] = "Resturants";
 }
 
 <h1>Resturants</h1>
@@ -19,35 +19,10 @@
     </div>
 </form>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Location</th>
-            <th scope="col">Cousine</th>
-            <th scope="col">Actions</th>
-        </tr>
-    </thead>
-    @foreach (var resturant in Model.ResturantList)
-    {
-        <tr>
-            <td>@resturant.Name</td>
-            <td>@resturant.Location</td>
-            <td>@resturant.Cousine</td>
-            <td>
-                <a class="btn btn-info btn-sm" asp-page="./Detail" asp-route-resturantID="@resturant.Id">
-                    <i class="fa fa-search-plus"></i>
-                </a>
-                <a class="btn btn-info btn-sm" asp-page="./Edit" asp-route-resturantID="@resturant.Id">
-                    <i class="fa fa-pencil"></i>
-                </a>
-                <a class="btn btn-danger btn-sm" asp-page="./Delete" asp-route-resturantID="@resturant.Id">
-                    <i class="fa fa-trash"></i>
-                </a>
-            </td>
-        </tr>
-    }
-</table>
+@foreach (var resturant in Model.ResturantList)
+{
+    <partial name="_Summary" model="resturant" />
+}
 
 <a asp-page="./Edit" class="btn btn-primary">Add New</a>
 

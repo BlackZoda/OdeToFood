@@ -15677,6 +15677,11 @@
       "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Shared/_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Resturants/_Summary.cshtml",
+      "TargetPath": "Pages\\Resturants\\_Summary.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
