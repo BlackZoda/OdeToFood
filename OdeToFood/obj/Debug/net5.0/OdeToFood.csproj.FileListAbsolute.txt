@@ -154,3 +154,8 @@
 /Users/Abusdal/ASPNET/OdeToFood/OdeToFood/obj/Debug/net5.0/Razor/Pages/Resturants/Delete.cshtml.g.cs
 /Users/Abusdal/ASPNET/OdeToFood/OdeToFood/obj/Debug/net5.0/Razor/Pages/Resturants/_Summary.cshtml.g.cs
 /Users/Abusdal/ASPNET/OdeToFood/OdeToFood/obj/Debug/net5.0/Razor/Pages/Shared/Components/ResturantCount/Default.cshtml.g.cs
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/obj/Debug/net5.0/Razor/Pages/Resturants/ClientResturants.cshtml.g.cs
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/bin/Debug/net5.0/package-lock.json
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/bin/Debug/net5.0/package.json
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/bin/Debug/net5.0/Microsoft.AspNetCore.NodeServices.dll
+/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/bin/Debug/net5.0/OdeToCode.UseNodeModules.dll

@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "X8w4cKMRR58Ft2LIn8lDMLzFM7xcDy7EFPgQssp3FnVnGuAYOS2vnOOXadiRIrCjLRukWAbLolYCO8xoQm9cUw==",
+  "dgSpecHash": "zXvnbGW+MPlYNQh26p6jP5vlemRhlWh2DRGwhLYEwsGM0iJHXHWCuk9b0nBXIHrkYJmL7oGk9DVKmNbNL3Kseg==",
   "success": true,
   "projectFilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/OdeToFood.csproj",
   "expectedPackageFiles": [
+    "/Users/Abusdal/.nuget/packages/bootstrap/4.0.0/bootstrap.4.0.0.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/datatables.net/1.10.15/datatables.net.1.10.15.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/datatables.net-bs4/1.10.24/datatables.net-bs4.1.10.24.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/jquery/3.6.0/jquery.3.6.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/microsoft.aspnetcore.nodeservices/5.0.0-preview.8.20414.8/microsoft.aspnetcore.nodeservices.5.0.0-preview.8.20414.8.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.aspnetcore.razor.language/5.0.0/microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.razor.runtime/2.2.0/microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -27,12 +32,17 @@
     "/Users/Abusdal/.nuget/packages/microsoft.entityframeworkcore.sqlserver/5.0.5/microsoft.entityframeworkcore.sqlserver.5.0.5.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/microsoft.extensions.configuration/5.0.0-preview.8.20407.11/microsoft.extensions.configuration.5.0.0-preview.8.20407.11.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/microsoft.extensions.configuration.binder/5.0.0-preview.8.20407.11/microsoft.extensions.configuration.binder.5.0.0-preview.8.20407.11.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/microsoft.extensions.logging.configuration/5.0.0-preview.8.20407.11/microsoft.extensions.logging.configuration.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/microsoft.extensions.logging.console/5.0.0-preview.8.20407.11/microsoft.extensions.logging.console.5.0.0-preview.8.20407.11.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/microsoft.extensions.options.configurationextensions/5.0.0-preview.8.20407.11/microsoft.extensions.options.configurationextensions.5.0.0-preview.8.20407.11.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.identity.client/4.14.0/microsoft.identity.client.4.14.0.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.identitymodel.jsonwebtokens/5.6.0/microsoft.identitymodel.jsonwebtokens.5.6.0.nupkg.sha512",
@@ -52,7 +62,9 @@
     "/Users/Abusdal/.nuget/packages/microsoft.visualstudio.web.codegenerators.mvc/5.0.2/microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/Abusdal/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/odetocode.usenodemodules/3.0.0/odetocode.usenodemodules.3.0.0.nupkg.sha512",
+    "/Users/Abusdal/.nuget/packages/popper.js/1.12.9/popper.js.1.12.9.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.collections.concurrent/4.3.0/system.collections.concurrent.4.3.0.nupkg.sha512",
@@ -128,5 +140,16 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'datatables.net 1.10.15' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "datatables.net",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

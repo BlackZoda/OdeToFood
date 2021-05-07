@@ -15641,6 +15641,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Resturants/ClientResturants.cshtml",
+      "TargetPath": "Pages\\Resturants\\ClientResturants.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/Abusdal/ASPNET/OdeToFood/OdeToFood/Pages/Resturants/NotFound.cshtml",
       "TargetPath": "Pages\\Resturants\\NotFound.cshtml",
       "FileKind": "mvc"

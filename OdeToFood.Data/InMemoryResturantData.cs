@@ -63,5 +63,10 @@ namespace OdeToFood.Data
             }
             return resturant;
         }
+
+        public int GetCountOfResturants()
+        {
+            return resturants.Count();
+        }
     }
 }

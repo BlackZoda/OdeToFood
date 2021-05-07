@@ -16,10 +16,22 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)odetocode.usenodemodules/3.0.0/contentFiles/any/netcoreapp3.0/Properties/launchSettings.json" Condition="Exists('$(NuGetPackageRoot)odetocode.usenodemodules/3.0.0/contentFiles/any/netcoreapp3.0/Properties/launchSettings.json')">
+      <NuGetPackageId>OdeToCode.UseNodeModules</NuGetPackageId>
+      <NuGetPackageVersion>3.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Properties/launchSettings.json</Link>
+    </Content>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design/5.0.5/build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design/5.0.5/build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">/Users/Abusdal/.nuget/packages/microsoft.codeanalysis.analyzers/3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">/Users/Abusdal/.nuget/packages/jquery/3.6.0</PkgjQuery>
+    <Pkgdatatables_net Condition=" '$(Pkgdatatables_net)' == '' ">/Users/Abusdal/.nuget/packages/datatables.net/1.10.15</Pkgdatatables_net>
   </PropertyGroup>
 </Project>

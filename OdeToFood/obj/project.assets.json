@@ -2,6 +2,33 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "bootstrap/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "[3.0.0, 4.0.0)",
+          "popper.js": "[1.12.9, 2.0.0)"
+        }
+      },
+      "datatables.net/1.10.15": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.12.4"
+        },
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/_._": {}
+        }
+      },
+      "datatables.net-bs4/1.10.24": {
+        "type": "package",
+        "dependencies": {
+          "bootstrap": "4.0.0",
+          "datatables.net": "1.10.15",
+          "jquery": "1.7.0"
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -10,6 +37,9 @@
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
         }
+      },
+      "jQuery/3.6.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
@@ -22,6 +52,22 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
         }
+      },
+      "Microsoft.AspNetCore.NodeServices/5.0.0-preview.8.20414.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Console": "5.0.0-preview.8.20407.11",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.NodeServices.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.NodeServices.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.AspNetCore.Razor/2.2.0": {
         "type": "package",
@@ -494,6 +540,19 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration/5.0.0-preview.8.20407.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Primitives": "5.0.0-preview.8.20407.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -504,6 +563,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/5.0.0-preview.8.20407.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0-preview.8.20407.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection/5.0.1": {
@@ -551,6 +622,43 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Configuration/5.0.0-preview.8.20407.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Configuration.Binder": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Logging": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Options": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "5.0.0-preview.8.20407.11"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Logging.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Logging.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Console/5.0.0-preview.8.20407.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Logging": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Logging.Configuration": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Options": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "5.0.0-preview.8.20407.11"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.Options/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -562,6 +670,22 @@
         },
         "runtime": {
           "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/5.0.0-preview.8.20407.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Configuration.Binder": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Options": "5.0.0-preview.8.20407.11",
+          "Microsoft.Extensions.Primitives": "5.0.0-preview.8.20407.11"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/5.0.0": {
@@ -831,7 +955,7 @@
           }
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -839,6 +963,28 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "OdeToCode.UseNodeModules/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "contentFiles": {
+          "contentFiles/any/netcoreapp3.0/Properties/launchSettings.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "popper.js/1.12.9": {
+        "type": "package"
       },
       "runtime.native.System/4.3.0": {
         "type": "package",
@@ -2027,6 +2173,316 @@
     }
   },
   "libraries": {
+    "bootstrap/4.0.0": {
+      "sha512": "aW3kJMmptC2GD4+hIa3x3fSrPF4VkrWQ2PRBEJg+o7lMRMi7u4UW9igY/GP02/wrIpH/CusL+mQIM42YhvA3XQ==",
+      "type": "package",
+      "path": "bootstrap/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bootstrap.4.0.0.nupkg.sha512",
+        "bootstrap.nuspec",
+        "content/Content/bootstrap-grid.css",
+        "content/Content/bootstrap-grid.css.map",
+        "content/Content/bootstrap-grid.min.css",
+        "content/Content/bootstrap-grid.min.css.map",
+        "content/Content/bootstrap-reboot.css",
+        "content/Content/bootstrap-reboot.css.map",
+        "content/Content/bootstrap-reboot.min.css",
+        "content/Content/bootstrap-reboot.min.css.map",
+        "content/Content/bootstrap.css",
+        "content/Content/bootstrap.css.map",
+        "content/Content/bootstrap.min.css",
+        "content/Content/bootstrap.min.css.map",
+        "content/Scripts/bootstrap.bundle.js",
+        "content/Scripts/bootstrap.bundle.js.map",
+        "content/Scripts/bootstrap.bundle.min.js",
+        "content/Scripts/bootstrap.bundle.min.js.map",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.js.map",
+        "content/Scripts/bootstrap.min.js",
+        "content/Scripts/bootstrap.min.js.map"
+      ]
+    },
+    "datatables.net/1.10.15": {
+      "sha512": "q4EzBAJ9I10phyF24GXlRhXv2uJ91kG7nnVb80ywGsCghfus/1ynqMv12mFGjXxpoMdlOBCf4nth/EymQfCevw==",
+      "type": "package",
+      "path": "datatables.net/1.10.15",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.bootstrap.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.bootstrap.min.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.bootstrap4.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.dataTables.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.dataTables.min.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.foundation.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.foundation.min.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.jqueryui.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.jqueryui.min.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.semanticui.css",
+        "content/Content/DataTables/extensions/AutoFill/css/autoFill.semanticui.min.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.bootstrap.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.bootstrap4.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.dataTables.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.dataTables.min.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.foundation.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.foundation.min.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.jqueryui.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.jqueryui.min.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.semanticui.css",
+        "content/Content/DataTables/extensions/Buttons/css/buttons.semanticui.min.css",
+        "content/Content/DataTables/extensions/Buttons/css/common.scss",
+        "content/Content/DataTables/extensions/Buttons/css/mixins.scss",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.bootstrap.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.bootstrap.min.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.bootstrap4.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.dataTables.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.dataTables.min.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.foundation.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.foundation.min.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.jqueryui.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.jqueryui.min.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.semanticui.css",
+        "content/Content/DataTables/extensions/ColReorder/css/colReorder.semanticui.min.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap.min.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap4.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.dataTables.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.dataTables.min.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.foundation.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.foundation.min.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.jqueryui.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.jqueryui.min.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.semanticui.css",
+        "content/Content/DataTables/extensions/FixedColumns/css/fixedColumns.semanticui.min.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap4.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.dataTables.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.dataTables.min.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.foundation.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.foundation.min.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.jqueryui.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.jqueryui.min.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.semanticui.css",
+        "content/Content/DataTables/extensions/FixedHeader/css/fixedHeader.semanticui.min.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.bootstrap.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.bootstrap.min.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.bootstrap4.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.dataTables.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.dataTables.min.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.foundation.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.foundation.min.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.jqueryui.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.jqueryui.min.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.semanticui.css",
+        "content/Content/DataTables/extensions/KeyTable/css/keyTable.semanticui.min.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.bootstrap.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.bootstrap4.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.dataTables.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.dataTables.min.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.foundation.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.foundation.min.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.jqueryui.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.jqueryui.min.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.semanticui.css",
+        "content/Content/DataTables/extensions/Responsive/css/responsive.semanticui.min.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.bootstrap.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.bootstrap.min.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.bootstrap4.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.dataTables.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.dataTables.min.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.foundation.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.foundation.min.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.jqueryui.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.jqueryui.min.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.semanticui.css",
+        "content/Content/DataTables/extensions/RowGroup/css/rowGroup.semanticui.min.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.min.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.bootstrap4.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.dataTables.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.dataTables.min.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.foundation.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.foundation.min.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.jqueryui.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.jqueryui.min.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.semanticui.css",
+        "content/Content/DataTables/extensions/RowReorder/css/rowReorder.semanticui.min.css",
+        "content/Content/DataTables/extensions/RowReorder/css/semanticui.scss",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.bootstrap.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.bootstrap.min.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.bootstrap4.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.dataTables.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.dataTables.min.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.foundation.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.foundation.min.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.jqueryui.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.jqueryui.min.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.semanticui.css",
+        "content/Content/DataTables/extensions/Scroller/css/scroller.semanticui.min.css",
+        "content/Content/DataTables/extensions/Select/css/select.bootstrap.css",
+        "content/Content/DataTables/extensions/Select/css/select.bootstrap.min.css",
+        "content/Content/DataTables/extensions/Select/css/select.bootstrap4.css",
+        "content/Content/DataTables/extensions/Select/css/select.bootstrap4.min.css",
+        "content/Content/DataTables/extensions/Select/css/select.dataTables.css",
+        "content/Content/DataTables/extensions/Select/css/select.dataTables.min.css",
+        "content/Content/DataTables/extensions/Select/css/select.foundation.css",
+        "content/Content/DataTables/extensions/Select/css/select.foundation.min.css",
+        "content/Content/DataTables/extensions/Select/css/select.jqueryui.css",
+        "content/Content/DataTables/extensions/Select/css/select.jqueryui.min.css",
+        "content/Content/DataTables/extensions/Select/css/select.semanticui.css",
+        "content/Content/DataTables/extensions/Select/css/select.semanticui.min.css",
+        "content/Content/DataTables/media/css/dataTables.bootstrap.css",
+        "content/Content/DataTables/media/css/dataTables.bootstrap.min.css",
+        "content/Content/DataTables/media/css/dataTables.bootstrap4.css",
+        "content/Content/DataTables/media/css/dataTables.bootstrap4.min.css",
+        "content/Content/DataTables/media/css/dataTables.foundation.css",
+        "content/Content/DataTables/media/css/dataTables.foundation.min.css",
+        "content/Content/DataTables/media/css/dataTables.jqueryui.css",
+        "content/Content/DataTables/media/css/dataTables.jqueryui.min.css",
+        "content/Content/DataTables/media/css/dataTables.material.css",
+        "content/Content/DataTables/media/css/dataTables.material.min.css",
+        "content/Content/DataTables/media/css/dataTables.semanticui.css",
+        "content/Content/DataTables/media/css/dataTables.semanticui.min.css",
+        "content/Content/DataTables/media/css/dataTables.uikit.css",
+        "content/Content/DataTables/media/css/dataTables.uikit.min.css",
+        "content/Content/DataTables/media/css/jquery.dataTables.css",
+        "content/Content/DataTables/media/css/jquery.dataTables.min.css",
+        "content/Content/DataTables/media/css/jquery.dataTables_themeroller.css",
+        "content/Content/DataTables/media/images/Sorting icons.psd",
+        "content/Content/DataTables/media/images/favicon.ico",
+        "content/Content/DataTables/media/images/sort_asc.png",
+        "content/Content/DataTables/media/images/sort_asc_disabled.png",
+        "content/Content/DataTables/media/images/sort_both.png",
+        "content/Content/DataTables/media/images/sort_desc.png",
+        "content/Content/DataTables/media/images/sort_desc_disabled.png",
+        "content/Scripts/DataTables/extensions/AutoFill/Readme.md",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.bootstrap.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.bootstrap.min.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.bootstrap4.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.bootstrap4.min.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.foundation.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.foundation.min.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.jqueryui.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.jqueryui.min.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.semanticui.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/autoFill.semanticui.min.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/dataTables.autoFill.js",
+        "content/Scripts/DataTables/extensions/AutoFill/js/dataTables.autoFill.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/Readme.md",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.bootstrap.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.bootstrap4.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.bootstrap4.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.colVis.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.colVis.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.flash.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.flash.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.foundation.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.foundation.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.html5.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.html5.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.jqueryui.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.jqueryui.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.print.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.print.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.semanticui.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/buttons.semanticui.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/dataTables.buttons.js",
+        "content/Scripts/DataTables/extensions/Buttons/js/dataTables.buttons.min.js",
+        "content/Scripts/DataTables/extensions/Buttons/swf/flashExport.swf",
+        "content/Scripts/DataTables/extensions/ColReorder/Readme.md",
+        "content/Scripts/DataTables/extensions/ColReorder/js/dataTables.colReorder.js",
+        "content/Scripts/DataTables/extensions/ColReorder/js/dataTables.colReorder.min.js",
+        "content/Scripts/DataTables/extensions/FixedColumns/Readme.md",
+        "content/Scripts/DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.js",
+        "content/Scripts/DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js",
+        "content/Scripts/DataTables/extensions/FixedHeader/Readme.md",
+        "content/Scripts/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.js",
+        "content/Scripts/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js",
+        "content/Scripts/DataTables/extensions/KeyTable/Readme.md",
+        "content/Scripts/DataTables/extensions/KeyTable/js/dataTables.keyTable.js",
+        "content/Scripts/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js",
+        "content/Scripts/DataTables/extensions/Responsive/Readme.md",
+        "content/Scripts/DataTables/extensions/Responsive/js/dataTables.responsive.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/dataTables.responsive.min.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.bootstrap.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.bootstrap.min.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.bootstrap4.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.bootstrap4.min.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.foundation.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.foundation.min.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.jqueryui.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.jqueryui.min.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.semanticui.js",
+        "content/Scripts/DataTables/extensions/Responsive/js/responsive.semanticui.min.js",
+        "content/Scripts/DataTables/extensions/RowGroup/Readme.md",
+        "content/Scripts/DataTables/extensions/RowGroup/js/dataTables.rowGroup.js",
+        "content/Scripts/DataTables/extensions/RowGroup/js/dataTables.rowGroup.min.js",
+        "content/Scripts/DataTables/extensions/RowReorder/Readme.md",
+        "content/Scripts/DataTables/extensions/RowReorder/js/dataTables.rowReorder.js",
+        "content/Scripts/DataTables/extensions/RowReorder/js/dataTables.rowReorder.min.js",
+        "content/Scripts/DataTables/extensions/Scroller/Readme.md",
+        "content/Scripts/DataTables/extensions/Scroller/js/dataTables.scroller.js",
+        "content/Scripts/DataTables/extensions/Scroller/js/dataTables.scroller.min.js",
+        "content/Scripts/DataTables/extensions/Select/Readme.md",
+        "content/Scripts/DataTables/extensions/Select/js/dataTables.select.js",
+        "content/Scripts/DataTables/extensions/Select/js/dataTables.select.min.js",
+        "content/Scripts/DataTables/media/js/dataTables.bootstrap.js",
+        "content/Scripts/DataTables/media/js/dataTables.bootstrap.min.js",
+        "content/Scripts/DataTables/media/js/dataTables.bootstrap4.js",
+        "content/Scripts/DataTables/media/js/dataTables.bootstrap4.min.js",
+        "content/Scripts/DataTables/media/js/dataTables.foundation.js",
+        "content/Scripts/DataTables/media/js/dataTables.foundation.min.js",
+        "content/Scripts/DataTables/media/js/dataTables.jqueryui.js",
+        "content/Scripts/DataTables/media/js/dataTables.jqueryui.min.js",
+        "content/Scripts/DataTables/media/js/dataTables.material.js",
+        "content/Scripts/DataTables/media/js/dataTables.material.min.js",
+        "content/Scripts/DataTables/media/js/dataTables.semanticui.js",
+        "content/Scripts/DataTables/media/js/dataTables.semanticui.min.js",
+        "content/Scripts/DataTables/media/js/dataTables.uikit.js",
+        "content/Scripts/DataTables/media/js/dataTables.uikit.min.js",
+        "content/Scripts/DataTables/media/js/jquery.dataTables.js",
+        "content/Scripts/DataTables/media/js/jquery.dataTables.min.js",
+        "content/Scripts/DataTables/media/js/jquery.js",
+        "datatables.net.1.10.15.nupkg.sha512",
+        "datatables.net.nuspec",
+        "lib/_._",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "datatables.net-bs4/1.10.24": {
+      "sha512": "yB4ILxAZS3BsIGY3l5OWn/4Zul8ckZppQr562TcHV6SDt0EYxLFTdP78P5smHOpmlBElu/K7MMOc8HoyTscIvw==",
+      "type": "package",
+      "path": "datatables.net-bs4/1.10.24",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dataTables.bootstrap4.css",
+        "dataTables.bootstrap4.js",
+        "dataTables.bootstrap4.min.css",
+        "dataTables.bootstrap4.min.js",
+        "datatables.net-bs4.1.10.24.nupkg.sha512",
+        "datatables.net-bs4.nuspec"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -2043,6 +2499,29 @@
         "logo.png"
       ]
     },
+    "jQuery/3.6.0": {
+      "sha512": "sSzCTDWn15waSMjDrP21jjgG1j1pwISLaKiVCClwU4XGAmuZt+FScLkdyRvh9ppoIxAW/tJtJBYei+3CAwFQ7g==",
+      "type": "package",
+      "path": "jquery/3.6.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-3.6.0-vsdoc.js",
+        "Content/Scripts/jquery-3.6.0.js",
+        "Content/Scripts/jquery-3.6.0.min.js",
+        "Content/Scripts/jquery-3.6.0.min.map",
+        "Content/Scripts/jquery-3.6.0.slim.js",
+        "Content/Scripts/jquery-3.6.0.slim.min.js",
+        "Content/Scripts/jquery-3.6.0.slim.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-3.6.0.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.3.6.0.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "sha512": "Z08ZN/kjJ15AQyNY349dpTPJdpdVJ/RYLLJjY9sf6VoHBf3vRBSCBx6orXMspMeRJrhHultPTP0IKVK2g4KZxg==",
       "type": "package",
@@ -2054,6 +2533,20 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.xml",
         "microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.html.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.NodeServices/5.0.0-preview.8.20414.8": {
+      "sha512": "Q8hFxIhqvayER8GUYPyWfzsvU7xvxBQB/v5CR79OaFMJqibhGYFK8+tmjSB2i2M6JKPcyIeptifJDQKt0m8UxQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.nodeservices/5.0.0-preview.8.20414.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.AspNetCore.NodeServices.dll",
+        "microsoft.aspnetcore.nodeservices.5.0.0-preview.8.20414.8.nupkg.sha512",
+        "microsoft.aspnetcore.nodeservices.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor/2.2.0": {
@@ -2691,6 +3184,26 @@
         "version.txt"
       ]
     },
+    "Microsoft.Extensions.Configuration/5.0.0-preview.8.20407.11": {
+      "sha512": "m+dRgpwZzfRKshodBpHV4i8htAlSL7W+8FkZeJL0GCE9wmaWaoQUdrCY3ZIvOeOF9LRwFve9HFrtSZyhve4SCg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/5.0.0-preview.8.20407.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.5.0.0-preview.8.20407.11.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
       "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
       "type": "package",
@@ -2707,6 +3220,26 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/5.0.0-preview.8.20407.11": {
+      "sha512": "dDtk1NjNq0c+leKm0+WXAkBvuOJ5syzXBzNu5JVtkDCC+bnugkUrKGd3+z7NmwNwWAbScI9/WA+NTEUFpIgkew==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/5.0.0-preview.8.20407.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.5.0.0-preview.8.20407.11.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2797,6 +3330,50 @@
         "version.txt"
       ]
     },
+    "Microsoft.Extensions.Logging.Configuration/5.0.0-preview.8.20407.11": {
+      "sha512": "8gOMpJkWmkX3O3sIjMx3bn+eJz41dSK8hK/h+sZdMADSsjfR1OLUexerdAQMZJb4K3lzfeLXlH06F98c6GOUXA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.configuration/5.0.0-preview.8.20407.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Configuration.xml",
+        "lib/net5.0/Microsoft.Extensions.Logging.Configuration.dll",
+        "lib/net5.0/Microsoft.Extensions.Logging.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.xml",
+        "microsoft.extensions.logging.configuration.5.0.0-preview.8.20407.11.nupkg.sha512",
+        "microsoft.extensions.logging.configuration.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Console/5.0.0-preview.8.20407.11": {
+      "sha512": "uK0Hv5rL4460IPb++9gbmjTXyVFtw+foAxuNr6umYdxLS8MVnS+ynJSogpBeaogp3jlm9H7OfGWD7+nuwzcN3Q==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.console/5.0.0-preview.8.20407.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Console.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Console.xml",
+        "lib/net5.0/Microsoft.Extensions.Logging.Console.dll",
+        "lib/net5.0/Microsoft.Extensions.Logging.Console.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Console.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Console.xml",
+        "microsoft.extensions.logging.console.5.0.0-preview.8.20407.11.nupkg.sha512",
+        "microsoft.extensions.logging.console.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.Extensions.Options/5.0.0": {
       "sha512": "CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
       "type": "package",
@@ -2815,6 +3392,28 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "microsoft.extensions.options.5.0.0.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/5.0.0-preview.8.20407.11": {
+      "sha512": "/2VowBVmVhNZMhcn0zgSKSecAEN6Rh946s1w0JmoMVHFMAQbKIyfJjaidk6gBJvh9hgm+2X8kyOY+ShteQ8qeQ==",
+      "type": "package",
+      "path": "microsoft.extensions.options.configurationextensions/5.0.0-preview.8.20407.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/net461/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "lib/net5.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/net5.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "microsoft.extensions.options.configurationextensions.5.0.0-preview.8.20407.11.nupkg.sha512",
+        "microsoft.extensions.options.configurationextensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -3502,10 +4101,10 @@
         "version.txt"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3528,8 +4127,59 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "OdeToCode.UseNodeModules/3.0.0": {
+      "sha512": "w1Xdc8oDggU4nucBSnoR4pPT9oHf/JtYGOisaeaFd8jiOoBcByddyuIPmWI2GiNUpXGKMPQROD4wl1aeEZ5aaA==",
+      "type": "package",
+      "path": "odetocode.usenodemodules/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Properties/launchSettings.json",
+        "contentFiles/any/netcoreapp3.0/Properties/launchSettings.json",
+        "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll",
+        "odetocode.usenodemodules.3.0.0.nupkg.sha512",
+        "odetocode.usenodemodules.nuspec"
+      ]
+    },
+    "popper.js/1.12.9": {
+      "sha512": "WfoI8YXFx31zr8w6AvYMmqKihR3a/wLc5wBhu41ApgBukTM8C2UHNSRFrO6485SDQ/HKoSn9yiEMgfBx1LVNNw==",
+      "type": "package",
+      "path": "popper.js/1.12.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Scripts/README.md",
+        "content/Scripts/esm/popper-utils.js",
+        "content/Scripts/esm/popper-utils.js.map",
+        "content/Scripts/esm/popper-utils.min.js",
+        "content/Scripts/esm/popper-utils.min.js.map",
+        "content/Scripts/esm/popper.js",
+        "content/Scripts/esm/popper.js.map",
+        "content/Scripts/esm/popper.min.js",
+        "content/Scripts/esm/popper.min.js.map",
+        "content/Scripts/index.d.ts",
+        "content/Scripts/popper-utils.js",
+        "content/Scripts/popper-utils.js.map",
+        "content/Scripts/popper-utils.min.js",
+        "content/Scripts/popper-utils.min.js.map",
+        "content/Scripts/popper.js",
+        "content/Scripts/popper.js.map",
+        "content/Scripts/popper.min.js",
+        "content/Scripts/popper.min.js.map",
+        "content/Scripts/umd/popper-utils.js",
+        "content/Scripts/umd/popper-utils.js.map",
+        "content/Scripts/umd/popper-utils.min.js",
+        "content/Scripts/umd/popper-utils.min.js.map",
+        "content/Scripts/umd/popper.js",
+        "content/Scripts/umd/popper.js.map",
+        "content/Scripts/umd/popper.min.js",
+        "content/Scripts/umd/popper.min.js.map",
+        "popper.js.1.12.9.nupkg.sha512",
+        "popper.js.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -7098,12 +7748,16 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Microsoft.AspNetCore.NodeServices >= 5.0.0-preview.8.20414.8",
       "Microsoft.EntityFrameworkCore >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "OdeToCode.UseNodeModules >= 3.0.0",
       "OdeToFood.Core >= 1.0.0",
-      "OdeToFood.Data >= 1.0.0"
+      "OdeToFood.Data >= 1.0.0",
+      "datatables.net-bs4 >= 1.10.24",
+      "jQuery >= 3.6.0"
     ]
   },
   "packageFolders": {
@@ -7154,6 +7808,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.AspNetCore.NodeServices": {
+            "target": "Package",
+            "version": "[5.0.0-preview.8.20414.8, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.5, )"
@@ -7171,6 +7829,18 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "OdeToCode.UseNodeModules": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "datatables.net-bs4": {
+            "target": "Package",
+            "version": "[1.10.24, )"
+          },
+          "jQuery": {
+            "target": "Package",
+            "version": "[3.6.0, )"
           }
         },
         "imports": [
@@ -7194,5 +7864,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'datatables.net 1.10.15' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "datatables.net",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
